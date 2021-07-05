@@ -48,21 +48,27 @@ logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
 const servicesLink = document.querySelector("a:nth-of-type(1)");
 servicesLink.textContent = siteContent["nav"]["nav-item-1"];
+servicesLink.style.color = "green";
 
 const productLink = document.querySelector("a:nth-of-type(2)");
 productLink.textContent = siteContent["nav"]["nav-item-2"];
+productLink.style.color = "green";
 
 const visionLink = document.querySelector("a:nth-of-type(3)");
 visionLink.textContent = siteContent["nav"]["nav-item-3"];
+visionLink.style.color = "green";
 
 const featureLink = document.querySelector("a:nth-of-type(4)");
 featureLink.textContent = siteContent["nav"]["nav-item-4"];
+featureLink.style.color = "green";
 
 const aboutLink = document.querySelector("a:nth-of-type(5)");
 aboutLink.textContent = siteContent["nav"]["nav-item-5"];
+aboutLink.style.color = "green";
 
 const contactLink = document.querySelector("a:nth-of-type(6)");
 contactLink.textContent = siteContent["nav"]["nav-item-6"];
+contactLink.style.color = "green";
 
 const titleText = document.querySelector(".cta-text h1");
 titleText.textContent = siteContent["cta"]["h1"];
@@ -141,3 +147,15 @@ contactEmail.textContent = siteContent["contact"]["email"];
 
 const copyrightFooter = document.querySelector("footer");
 copyrightFooter.textContent = siteContent["footer"]["copyright"];
+
+const blogLink = document.createElement("a");
+blogLink.textContent = "Blog";
+blogLink.href = "#";
+blogLink.style.color = "green";
+document.querySelector("nav").prepend(blogLink);
+
+const storeLink = document.createElement("a");
+storeLink.textContent = "Store";
+storeLink.href = "#";
+storeLink.style.color = "green";
+document.querySelector("nav").appendChild(storeLink);
